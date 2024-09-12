@@ -1,0 +1,75 @@
+*{
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(https://img.freepik.com/free-vector/realistic-polygonal-background_52683-60158.jpg?t=st=1726142307~exp=1726145907~hmac=dc46020edc5f0346ab1f6911557a48115de8b8c1aea51cebfd39fc18a73e56e6&w=996);
+    background-size: cover;
+    color: white;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap:0px;
+    margin-top: -100px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    color: #000; 
+}
+.form-control{
+    width: 30vw;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    margin-top: -150px;
+}
+input{ 
+    text-align: center;
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+}
+.password{
+   padding-left: 105px;
+   padding-right: 105px;
+}
+button {
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    background: grey;
+    color: gold;
+}
+button:active{
+    color: black;
+    background:  whitesmoke;
+    box-shadow: 10px 10px black;
+}
+span{
+    color: red;
+}
+h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    position: absolute;
+    top: 17px;
+    right: 60px;
+    cursor: pointer;
+    left: 85%;
+    color: black;
+}
+#show-password{
+    position: relative;
+}

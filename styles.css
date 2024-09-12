@@ -1,0 +1,46 @@
+/* Add these styles for the form */
+.add-transaction {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.add-transaction form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-transaction label {
+    margin: 10px 0 5px;
+}
+
+.add-transaction input,
+.add-transaction select {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#transactionForm > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#transactionForm > div > button{
+width: 30%;
+padding: 10px;
+background-color: #4CAF50;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+margin: 2px;
+}
+.add-transaction button:hover {
+    background-color: #45a049;
+}
