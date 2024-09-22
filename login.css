@@ -1,75 +1,113 @@
-*{
-    margin: 0%;
-    padding:0%;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-image: url(https://img.freepik.com/free-vector/realistic-polygonal-background_52683-60158.jpg?t=st=1726142307~exp=1726145907~hmac=dc46020edc5f0346ab1f6911557a48115de8b8c1aea51cebfd39fc18a73e56e6&w=996);
     background-size: cover;
     color: white;
-}
-section{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
-    gap:0px;
-    margin-top: -100px;
 }
-header{
-    display: flex;
-    flex-direction: column;
-}
-h1{
-    color: #000; 
-}
-.form-control{
-    width: 30vw;
-    border: 2px solid black;
+
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     justify-content: center;
-    margin-top: -150px;
+    height: 100%;
+    width: 100%;
 }
-input{ 
+
+.header {
+    height: 200px;
+    text-align: center;
+}
+.header > img{
+    height: 300px;
+}
+
+h1 {
+    color: #000;
+    margin-bottom: 20px;
+}
+form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-control {
+    width: 35%;
+    border-radius: 36px;
+    background: #e0e0e0a1;
+    box-shadow:  34px 34px 68px #bebebe;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+input { 
     text-align: center;
     width: 95%;
     padding: 10px;
     margin: 10px;
+    border-radius: 5px; /* Rounded input fields */
 }
-.password{
-   padding-left: 105px;
-   padding-right: 105px;
+
+.password {
+   padding: 10px;
 }
+
 button {
     width: 50%;
     padding: 10px;
     margin: 10px;
     background: grey;
     color: gold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
-button:active{
+
+button:active {
     color: black;
-    background:  whitesmoke;
-    box-shadow: 10px 10px black;
+    background: whitesmoke;
+    box-shadow: 5px 5px black;
 }
-span{
+
+span {
     color: red;
 }
+
 h3 {
     margin: 0;
     padding: 0;
     font-size: 1rem;
     position: absolute;
-    top: 17px;
-    right: 60px;
+    top: 30%;
+    right: 5%;
     cursor: pointer;
-    left: 85%;
     color: black;
 }
-#show-password{
+
+#show-password {
     position: relative;
+    width: 100%;
+}
+@media screen and (max-width: 769px) {
+    .form-control {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 426px) {
+    .form-control {
+        width: 95%;
+    }
 }
